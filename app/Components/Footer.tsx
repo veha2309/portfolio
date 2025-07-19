@@ -23,8 +23,8 @@ const Footer = () => {
         },
     }
     const arrayOfrefrences = Object.entries(socialMedia).map(
-        ([key, value]) => {
-            return [value.ref]
+        ( value) => {
+            return [value[1].ref]
         }
     ).flat()
 

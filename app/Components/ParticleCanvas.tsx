@@ -1,6 +1,12 @@
 'use client';
 import { useEffect, useRef } from 'react';
 
+type Star = {
+  x: number;
+  y: number;
+  z: number;
+}
+
 export default function StarField() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -21,7 +27,7 @@ export default function StarField() {
     const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8;
 
     const velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-    const stars: any[] = [];
+    const stars : Star[] = [];
 
     const generate = () => {
       for (let i = 0; i < STAR_COUNT; i++) {
@@ -33,12 +39,12 @@ export default function StarField() {
       }
     };
 
-    const placeStar = (star: any) => {
+    const placeStar = (star: Star) => {
       star.x = Math.random() * width;
       star.y = Math.random() * height;
     };
 
-    const recycleStar = (star: any) => {
+    const recycleStar = (star: Star) => {
       let direction = 'z';
       const vx = Math.abs(velocity.x);
       const vy = Math.abs(velocity.y);

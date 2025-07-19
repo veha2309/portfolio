@@ -1,8 +1,6 @@
 'use client'
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { animate } from "animejs";
-import Link from "next/link";
 
 export default function Home() {
   const imageRef = useRef<HTMLImageElement | null>(null);
