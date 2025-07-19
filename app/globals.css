@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+@theme {
+  --color-primary: #323b42;
+ --font-bitcount : var(--font-bitcount);
+}
+
+
+* {
+  @apply font-bitcount;
+}
+ 

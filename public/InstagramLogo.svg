@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="insta" cx="0.3" cy="0.3" r="1">
+      <stop offset="0%" stop-color="#fdf497"/>
+      <stop offset="25%" stop-color="#fd5949"/>
+      <stop offset="50%" stop-color="#d6249f"/>
+      <stop offset="75%" stop-color="#285AEB"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#insta)" d="M349.33 69.33H162.67C108.91 69.33 69.33 108.91 69.33 162.67v186.66c0 53.76 39.58 93.34 93.34 93.34h186.66c53.76 0 93.34-39.58 93.34-93.34V162.67c0-53.76-39.58-93.34-93.34-93.34zM256 362c-58.69 0-106-47.31-106-106s47.31-106 106-106 106 47.31 106 106-47.31 106-106 106zm109.8-194.6a25 25 0 1 1 25-25 25 25 0 0 1-25 25zM256 180a76 76 0 1 0 76 76 76 76 0 0 0-76-76z"/>
+</svg>
