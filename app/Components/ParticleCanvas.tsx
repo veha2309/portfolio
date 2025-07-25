@@ -193,7 +193,7 @@ export default function StarField() {
         backgroundColor: '#323b42',
         backgroundImage: `radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)`
       }}
-      className='opacity-50'
+      className='opacity-50 max-md:hidden'
     />
   );
 }

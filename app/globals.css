@@ -4,11 +4,17 @@
 
 @theme {
   --color-primary: #323b42;
- --font-bitcount : var(--font-bitcount);
+  --font-bitcount: var(--font-bitcount);
 }
 
 
 * {
   @apply font-bitcount;
 }
- 
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}

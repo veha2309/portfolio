@@ -30,7 +30,6 @@ const Footer = () => {
 
     useEffect(() => {
         const isMobile = window.innerWidth < 768;
-        console.log(isMobile)
         if (isMobile) return;
         const controller = animate(
             arrayOfrefrences.map((e) => e.current),
@@ -67,7 +66,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="bg-black text-gray-400 h-80 w-full absolute bottom-0 flex flex-col justify-center items-center">
+            <footer className="bg-black text-gray-400 h-80 w-full relative bottom-0 flex flex-col justify-center items-center">
                 <div className="w-full h-32 lg:h-52 flex justify-center items-center gap-20 relative">
 
 
