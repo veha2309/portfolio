@@ -9,7 +9,6 @@ type AnimationToggleProps = {
 const AnimationToggle = ({ onClick }: AnimationToggleProps) => {
     const [active, setActive] = useState(true);
     const [isOpen, setIsOpen] = useState(false);
-    const [isAnimating, setIsAnimating] = useAnimation(active);
     const toggleAnimation = () => {
 
         setActive((prev) => !prev);
