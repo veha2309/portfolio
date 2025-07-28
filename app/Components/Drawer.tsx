@@ -1,6 +1,6 @@
 
-import { animate } from "animejs";
-import { useRef } from "react";
+// import { animate } from "animejs";
+// import { useRef } from "react";
 
 const Drawer = () => {
     // const drawerRef = useRef<HTMLDivElement>(null);

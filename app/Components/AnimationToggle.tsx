@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import useAnimation from '../Hooks/useAnimation';
 
 
 type AnimationToggleProps = {
@@ -71,25 +70,6 @@ const AnimationToggle = ({ onClick }: AnimationToggleProps) => {
                 )}
             </div>
 
-            {/* <svg
-                ref={ARef}
-                className="w-8 h-8 transition-transform"
-                viewBox="0 0 24 24"
-                fill={active ? 'black' : 'gray'}
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <circle cx="12" cy="12" r="10" />
-            </svg>
-
-            <svg
-                ref={BRef}
-                className="w-8 h-8 transition-transform"
-                viewBox="0 0 24 24"
-                fill={!active ? 'black' : 'gray'}
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect x="4" y="4" width="16" height="16" />
-            </svg> */}
 
         </>
     );
