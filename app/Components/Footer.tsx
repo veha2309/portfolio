@@ -68,8 +68,6 @@ const Footer = () => {
         <>
             <footer className="bg-black text-gray-400 h-80 w-full relative bottom-0 flex flex-col justify-center items-center">
                 <div className="w-full h-32 lg:h-52 flex justify-center items-center gap-20 relative">
-
-
                     {
                         arrayOfrefrences.map((e, index) => {
                             return (

@@ -4,6 +4,8 @@ import "./globals.css";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import StarField from "./Components/ParticleCanvas";
+import AnimationToggle from "./Components/AnimationToggle";
+import AnimationWrapper from "./Components/AnimationWrapper";
 
 
 const myFont = localFont({
@@ -25,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${myFont.variable} antialiased bg-primary `}
       >
-        <StarField />
+        <AnimationWrapper/>
         <NavBar />
         {children}
         {/* <ChatBotBlob/> */}

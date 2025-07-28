@@ -11,14 +11,20 @@ const Projects = () => {
 
 
     useEffect(() => {
-       const project =  getProjects() // Replace 'some-id' with a valid project ID
+        const project = getProjects() // Replace 'some-id' with a valid project ID
             .catch(err => console.error(err))
             .finally(() => setLoading(false));
-            project.then((res) => res && setProjects(res.data))
+        project.then((res) => res && setProjects(res.data))
     }, []);
 
 
-    if (loading) return <p className="text-white">Loading projects...</p>;
+    if (loading) return (
+        <>
+        <div className="h-screen w-full">
+            <p className="text-white">Loading projects...</p>
+        </div>
+        </>
+    );
     return (
         <>
             <div className="h-screen w-full grid-cols-3 grid">
